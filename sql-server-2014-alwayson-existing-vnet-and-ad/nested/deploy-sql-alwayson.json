@@ -27,7 +27,7 @@
       "type": "string"
     },
 	"sqlServerServiceAccountDomainName": {
-		"type": "string"
+	  "type": "string"
 	},
     "sqlServerServiceAccountUserName": {
       "type": "string"
