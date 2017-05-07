@@ -17,6 +17,9 @@
 		"adminPassword": {
 			"type": "securestring"
 		},
+		"sqlServerServiceAccountDomainName": {
+			"type": "string"
+		},
 		"sqlServerServiceAccountUserName": {
 			"type": "string"
 		},
@@ -439,6 +442,9 @@
 					},
 					"dnsServerName": {
 						"value": "[parameters('dnsServerName')]"
+					},
+					"sqlServerServiceAccountDomainName": {
+						"value": "[parameters('sqlServerServiceAccountDomainName')]"
 					},
 					"sqlServerServiceAccountUserName": {
 						"value": "[parameters('sqlServerServiceAccountUserName')]"

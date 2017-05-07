@@ -26,6 +26,9 @@
     "dnsServerName": {
       "type": "string"
     },
+	"sqlServerServiceAccountDomainName": {
+		"type": "string"
+	},
     "sqlServerServiceAccountUserName": {
       "type": "string"
     },
@@ -83,6 +86,7 @@
               "userName": "[parameters('adminUserName')]",
               "password": "PrivateSettingsRef:adminPassword"
             },
+			"sqlServerServiceAccountDomainName": "[parameters('sqlServerServiceAccountDomainName')]",
             "sqlServiceCreds": {
               "userName": "[parameters('sqlServerServiceAccountUserName')]",
               "password": "PrivateSettingsRef:sqlServerServiceAccountPassword"
@@ -134,6 +138,7 @@
               "userName": "[parameters('adminUserName')]",
               "password": "PrivateSettingsRef:adminPassword"
             },
+			"sqlServerServiceAccountDomainName": "[parameters('sqlServerServiceAccountDomainName')]",
             "sqlServiceCreds": {
               "userName": "[parameters('sqlServerServiceAccountUserName')]",
               "password": "PrivateSettingsRef:sqlServerServiceAccountPassword"

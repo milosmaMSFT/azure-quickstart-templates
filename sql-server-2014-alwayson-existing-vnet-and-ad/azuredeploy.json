@@ -55,6 +55,13 @@
         "description": "Password for the Administrator account of the existing Active Directory Domain"
       }
     },
+	"existingSqlServerServiceAccountDomainName": {
+      "type": "string",
+      "metadata": {
+        "description": "DNS domain name for existing SQL Service account user domain"
+      },
+      "defaultValue": "contoso.com"
+    },
     "sqlServerServiceAccountUserName": {
       "type": "string",
       "metadata": {
@@ -141,6 +148,9 @@
           },
           "adminPassword": {
             "value": "[parameters('adminPassword')]"
+          },
+		  "sqlServerServiceAccountDomainName": {
+            "value": "[parameters('existingSqlServerServiceAccountDomainName')]"
           },
           "sqlServerServiceAccountUserName": {
             "value": "[parameters('sqlServerServiceAccountUserName')]"
