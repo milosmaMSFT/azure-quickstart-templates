@@ -14,6 +14,9 @@
     "adminPassword": {
       "value": "GEN-PASSWORD"
     },
+	"existingSqlServerServiceAccountDomainName": {
+	  "value": "contoso.com"
+	},
     "sqlServerServiceAccountUserName": {
       "value": "sqlservice"
     },
